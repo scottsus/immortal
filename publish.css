@@ -598,6 +598,9 @@ body {
     padding-inline-end: 4px;
     padding-inline-start: 8px;
   }
+  .markdown-rendered {
+    width: 100%;
+  }
 }
 .cm-editor .cm-lineNumbers .cm-gutterElement {
   font-variant-numeric: tabular-nums;
@@ -690,6 +693,9 @@ figure {
 .inline-title {
   margin: 0 !important;
   padding: 16px 0;
+}
+.markdown-rendered {
+  width: 800px;
 }
 .minimal-status-off .status-bar {
   --status-bar-position: static;
