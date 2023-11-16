@@ -598,9 +598,6 @@ body {
     padding-inline-end: 4px;
     padding-inline-start: 8px;
   }
-  .markdown-rendered {
-    width: 100%;
-  }
 }
 .cm-editor .cm-lineNumbers .cm-gutterElement {
   font-variant-numeric: tabular-nums;
@@ -694,8 +691,16 @@ figure {
   margin: 0 !important;
   padding: 16px 0;
 }
-.markdown-rendered {
-  width: 800px;
+.site-body-center-column,
+.markdown-preview-section {
+  margin: 0 !important;
+  width: 60% !important;
+}
+@media (max-width: 1000px) {
+  .site-body-center-column,
+  .markdown-preview-section {
+    width: 100% !important;
+  }
 }
 .minimal-status-off .status-bar {
   --status-bar-position: static;
@@ -1469,6 +1474,7 @@ body {
   mix-blend-mode: multiply;
 }
 body {
+  --table-margin-y: 14px;
   --table-header-border-width: 1px;
   --table-column-first-border-width: 1px;
   --table-column-last-border-width: 1px;
@@ -1480,7 +1486,7 @@ body {
 }
 table {
   border-collapse: collapse;
-  margin: 14px 0 !important;
+  margin: var(--table-margin-y) 0 !important;
 }
 .markdown-rendered th {
   --table-header-size: var(--table-text-size);
