@@ -4,10 +4,10 @@ date: 2023-11-06
 topics: "[latch, flip flop, FF]"
 ---
 ### Sequential Logic Circuits
-- output levels of a **combination circuit** at any time are directly determined as boolean functions of the applied input variables
+- output levels of a **[[combination circuit]]** at any time are directly determined as boolean functions of the applied input variables
 	- combinational logic cannot store previous event or display output behavior dependent on previously applied inputs
 	- these are called *non-regenerative* circuits as there is no feedback relationship between input & output
-- the other class of logic circuits are **sequential circuits**, in which the output is determined by present as well as previous inputs
+- the other class of logic circuits are **[[sequential circuits]]**, in which the output is determined by present as well as previous inputs
 - 3 types of sequential circuits: *bistable*, *monostable*, *astable*
 ## Bistable Circuits
 - consider the following example

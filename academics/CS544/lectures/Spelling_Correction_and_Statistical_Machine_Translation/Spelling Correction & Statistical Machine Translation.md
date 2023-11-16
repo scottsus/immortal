@@ -16,7 +16,7 @@
 			- 1.7 million sentences of 30 words or less in length
 		- European Union
 		- translations of books
-	- Idea: use parallel corpora as training set of translation examples
+	- Idea: use [[parallel corpora]] as training set of translation examples
 		- train translation model, relaxing the need for rules
 - the primary machine translation model is the **Noisy Channel** model
 	- train model that receives a sentence in source language → returns sentence in target language
@@ -33,7 +33,7 @@
 	$\qquad p(f|e):$ the *translation* model
 - then the decoding problem is defined by
 	$\quad\text{argmax}_{e}p(e|f) = \text{argmax}_{e}p(e)p(f|e)$
-### Language Model: Trigram
+### Language Model: [[Trigram]]
 - Example: Spanish to English
 	![[Pasted image 20231115143611.png]]
 ### Translation Model: IBM Model
@@ -145,7 +145,7 @@ $\qquad$where
 We obtain the MLE of translation probability $t_{ML}$ and the MLE of alignment probability $q_{ML}$, where
 $\quad t_{ML}(f|e) = \frac{c(e,f)}{c(e)}$
 $\quad q_{ML}(j|i,l,m) = \frac{c(j|i,l,m)}{c(i,l,m)}$
-## Expectation Maximization
+## [[Expectation Maximization]]
 ### Introduction
 - algorithm invented by Dempster et al. 1977 for computing MLE from incomplete data
 	- *incomplete data:* data annotation absent for estimating model parameters
@@ -156,7 +156,7 @@ $\quad q_{ML}(j|i,l,m) = \frac{c(j|i,l,m)}{c(i,l,m)}$
 	2. assign probabilities to missing data (E-step)
 	3. estimate model parameters from completed data (M-step)
 	4. iterate steps 2-3 until convergence
-### Algorithm
+### [[Algorithm]]
 1. expectation-step: apply model to data and compute probability of alignments
 	- parts of the model are hidden (alignments)
 	- using the model, assign probabilities to possible values
@@ -190,7 +190,7 @@ $\qquad q_{ML}(j|i,l,m) = \frac{c(j|i,l,m)}{c(i,l,m)}$
 ![[Pasted image 20231115143703.png]]
 ![[Pasted image 20231115143718.png]]
 ### Model Evaluation
-- we use *perplexity*: deriving the probability of the training data according to the model
+- we use *[[perplexity]]*: deriving the probability of the training data according to the model
 	$\quad \log_{2}PP = -\sum_{s}\log_{2}p(e_{s}|f_{s})$
 - Example
 
