@@ -533,6 +533,11 @@ body {
 .markdown-source-view.mod-cm6 hr {
   border-width: 2px;
 }
+br {
+  display: block;
+  content: '';
+  margin: 16px 0;
+}
 .cm-lineWrapping {
   padding-top: 0 !important;
 }
