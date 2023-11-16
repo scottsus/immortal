@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "5d7d84553dd7c690",
+        "id": "735efeea0e5a7861",
         "type": "tabs",
         "children": [
           {
-            "id": "3ff2a3da7f886fb9",
+            "id": "03aea938bd8ecbdd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blah.md",
+                "file": "blog/Lava Questions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "65ba2c017299d664",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🔥 My World.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blah.md",
+                "file": "blog/Lava Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blah.md",
+                "file": "blog/Lava Questions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blah.md"
+                "file": "blog/Lava Questions.md"
               }
             }
           }
@@ -147,13 +159,36 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "3ff2a3da7f886fb9",
+  "active": "03aea938bd8ecbdd",
   "lastOpenFiles": [
-    "publish.css",
-    "Untitled.md",
+    "academics/CS544/lectures/Spelling_Correction_and_Statistical_Machine_Translation/Spelling Correction & Statistical Machine Translation.md",
+    "academics/CS544/lectures/Spelling_Correction_and_Statistical_Machine_Translation/Pasted image 20231115143718.png",
+    "academics/CS544/lectures/Spelling_Correction_and_Statistical_Machine_Translation/Pasted image 20231115143703.png",
+    "academics/CS544/lectures/Spelling_Correction_and_Statistical_Machine_Translation/Pasted image 20231115143639.png",
+    "academics/CS544/lectures/Spelling_Correction_and_Statistical_Machine_Translation/Pasted image 20231115143611.png",
+    "academics/CS544/lectures/Spelling_Correction_and_Statistical_Machine_Translation/Pasted image 20231115143532.png",
+    "academics/CS544/lectures/Spelling_Correction_and_Statistical_Machine_Translation",
+    "academics/CS544/lectures",
+    "academics/CS544",
     "Blah.md",
+    "🔥 My World.md",
+    "Untitled.md",
+    "blog/Lava Questions.md",
+    "academics/CS544/Spelling_Correction_and_Statistical_Machine_Translation/Spelling Correction & Statistical Machine Translation.md",
+    "academics/CS576",
+    "academics/EE477",
+    "academics/CS544/Spelling_Correction_and_Statistical_Machine_Translation/Pasted image 20231115143718.png",
+    "academics/CS544/Spelling_Correction_and_Statistical_Machine_Translation/Pasted image 20231115143703.png",
+    "academics/CS544/Spelling_Correction_and_Statistical_Machine_Translation/Pasted image 20231115143639.png",
+    "academics/CS544/Spelling_Correction_and_Statistical_Machine_Translation/Pasted image 20231115143611.png",
+    "academics/CS544/Spelling_Correction_and_Statistical_Machine_Translation/Pasted image 20231115143532.png",
+    "academics/CS544/Spelling Correction & Statistical Machine Translation.md",
+    "academics/CS544/Spelling_Correction_and_Statistical_Machine_Translation",
+    "academics/Spelling_Correction_and_Statistical_Machine_Translation",
+    "blog",
+    "academics/usc",
+    "academics",
     "Pasted image 20231113135625.png.md",
-    "Pasted image 20231115131322.png",
     "xxx.md"
   ]
 }

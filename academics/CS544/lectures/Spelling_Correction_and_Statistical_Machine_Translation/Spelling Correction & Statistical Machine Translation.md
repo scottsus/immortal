@@ -7,7 +7,7 @@
 	- POS + a set of rules based on grammar of source and target language (SOV vs SVO)
 	- long sentence reordering is easier
 	- SYSTRAN (Peter Toma, 1968) systems are based on this approach
-		![[Pasted image 20231113135625.png|500]]
+		![[Pasted image 20231115143532.png]]
 ## Statistical Machine Translation
 - *Parallel texts (corpora)*
 	- sets of documents where each document in 1 language is accompanied by its translation in another language
@@ -35,13 +35,13 @@
 	$\quad\text{argmax}_{e}p(e|f) = \text{argmax}_{e}p(e)p(f|e)$
 ### Language Model: Trigram
 - Example: Spanish to English
-	![[Pasted image 20231113141834.png|600]]
+	![[Pasted image 20231115143611.png]]
 ### Translation Model: IBM Model
 - Idea: in the parallel corpus, consider that, for a pair, the English sentence has $l$ words and the French sentence has $m$ words.
 	- an *alignment map* determines which English word that each French word originated from
 		- an alignment $a$ is $\{ a_{1},\dots a_{m} \}$, where $a_j\in\{ 0\dots l\}$
 		- hence, there are $(l+1)^m$ possible alignments
-		![[Pasted image 20231113142250.png|500]]
+		![[Pasted image 20231115143639.png]]
 - the total probability over all possible alignments is defined by
 	$\quad p(f|e,m) = \sum_{a\in A} p(a|e,m) p(f|a,e,m)$
 	- we then model the conditional probabilities $p(a|e,m)$ and $p(f|a,e,m)$
@@ -57,7 +57,8 @@
 	$\quad e =$ *And the program has been implemented*
 	$\quad f=$ *Le programme a ete mis en application*
 	$\qquad p(f|a,e) = t(Le|the) \times t(programme|program) \times t(a|has)$
-	$\qquad \qquad  \times\, t(ete|been) \times t(mis|implemented) \times t(en|implemented) \times t(application|implemented)$
+	$\qquad \qquad  \times\, t(ete|been) \times t(mis|implemented)$
+	$\qquad \qquad \times\, t(en|implemented) \times t(application|implemented)$
 - Example model paremeters
 
 	| English  | French    | Probability |
@@ -186,8 +187,8 @@ $\quad$ and we recalculate the parameters
 $\qquad t_{ML}(f|e) = \frac{c(e,f)}{c(e)}$
 $\qquad q_{ML}(j|i,l,m) = \frac{c(j|i,l,m)}{c(i,l,m)}$
 #### Visualization
-![[Pasted image 20231113180640.png]]
-![[Pasted image 20231113180659.png]]
+![[Pasted image 20231115143703.png]]
+![[Pasted image 20231115143718.png]]
 ### Model Evaluation
 - we use *perplexity*: deriving the probability of the training data according to the model
 	$\quad \log_{2}PP = -\sum_{s}\log_{2}p(e_{s}|f_{s})$
